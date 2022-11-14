@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const auth = axios.create({
-  baseURL: 'http://localhost:3050',
+  baseURL: 'http://210.90.136.10:3050',
   withCredentials: true,
   headers: {},
 })

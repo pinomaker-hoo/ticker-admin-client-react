@@ -7,9 +7,8 @@ export default function Board() {
   useEffect(() => {
     getBoard().then((res) => {
       setDataList(() => res.data)
-      console.log(dataList)
     })
-  }, [])
+  }, [dataList])
 
   const trList = ['id', 'title', 'text', 'user name', 'createdAt']
   return (

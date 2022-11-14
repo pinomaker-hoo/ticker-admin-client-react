@@ -9,7 +9,7 @@ export default function User() {
       setDataList(() => res.data)
       console.log(dataList)
     })
-  }, [])
+  }, [dataList])
 
   const trList = ['id', 'email', 'name', 'provider', 'birth', 'createdAt']
   return (
