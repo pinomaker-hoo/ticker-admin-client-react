@@ -9,7 +9,7 @@ export default function Ticket() {
       setDataList(() => res.data)
       console.log(dataList)
     })
-  }, [])
+  }, [dataList])
 
   const trList = ['id', 'title', 'price', 'user name', 'createdAt']
   return (
